@@ -1,0 +1,1 @@
+SELECT F.id_filial AS Codigo_Filial,F.nm_filial AS Nome_Filial,P.id_produto AS Codigo_Produto,P.ds_produto AS Nome_Produto FROM tb_estoque E INNER JOIN tb_produto P ON E.id_produto=P.id_produto INNER JOIN tb_filial F ON E.id_filial=F.id_filial GROUP BY F.id_filial ORDER BY F.id_filial;
